@@ -4,7 +4,8 @@
   "description": "Performance testing of various techniques for reading a large CSV file",
   "main": "index.js",
   "scripts": {
-    "test": "bash -c 'for JS in readcsv-*.js; do node $JS; done'"
+	"test": "bash -c 'for JS in readcsv-*.js; do node $JS; done'",
+	"test:windows": "FOR /F %i in ('dir /b readcsv-*.js') DO node %i"
   },
   "repository": {
     "type": "git",
