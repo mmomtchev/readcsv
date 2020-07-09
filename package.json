@@ -1,0 +1,29 @@
+{
+  "name": "readcsv",
+  "version": "1.0.0",
+  "description": "Performance testing of various techniques for reading a large CSV file",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash -c 'for JS in readcsv-*.js; do node $JS; done'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmomtchev/readcsv.git"
+  },
+  "keywords": [
+    "readline",
+    "readstream",
+    "event-stream",
+    "csv",
+    "performance"
+  ],
+  "author": "Momtchil Momtchev <momtchil@momtchev.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmomtchev/readcsv/issues"
+  },
+  "homepage": "https://github.com/mmomtchev/readcsv#readme",
+  "dependencies": {
+    "event-stream": "^4.0.1"
+  }
+}
