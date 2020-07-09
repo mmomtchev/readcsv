@@ -2,7 +2,6 @@ const fs = require('fs');
 const parseline = require('./parseline');
 
 const rs = fs.createReadStream('allCountries.txt');
-let t0 = 0, t1 = 0;
 
 const nl = '\n'.charCodeAt(0);
 
