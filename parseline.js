@@ -5,7 +5,7 @@ const tab = '\t'.charCodeAt(0);
 function parseline3(line, start) {
 	const f0 = line.indexOf(tab, start || 0);
 	const f1 = line.indexOf(tab, f0 + 1);
-	const data1 = line.slice(f0 + 1, f1).toString();
+	const data1 = line.toString('utf-8', f0 + 1, f1);
 	if (data1 && data1.match(/^Paris$/g))
 		counter++;
 }
